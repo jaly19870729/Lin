@@ -27,6 +27,7 @@
 		AAB6049D1A839A0C00C0E59B /* LINLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB604971A8393F700C0E59B /* LINLocalization.m */; };
 		AAB604A51A83C3B900C0E59B /* LINLocalizationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB604A41A83C3B900C0E59B /* LINLocalizationParser.m */; };
 		AAB604AB1A83CBD400C0E59B /* LINLocalizationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB604A41A83C3B900C0E59B /* LINLocalizationParser.m */; };
+		EED212AD1BDDF09B0088D676 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = EED212AC1BDDF09B0088D676 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		AAB604A41A83C3B900C0E59B /* LINLocalizationParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LINLocalizationParser.m; sourceTree = "<group>"; };
 		AAB604AC1A83D3B900C0E59B /* DVTTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTTextStorage.h; sourceTree = "<group>"; };
 		AAC2027C1A868C730010FDF7 /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
+		EED212AC1BDDF09B0088D676 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				AA80F33F1A82804C007687A3 /* Info.plist */,
 				AA49B19B1A829B02003EA1A3 /* Completions.plist */,
+				EED212AC1BDDF09B0088D676 /* readme.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED212AD1BDDF09B0088D676 /* readme.md in Sources */,
 				AAB604981A8393F700C0E59B /* LINLocalization.m in Sources */,
 				AA89B4FD1A872ED600E8CCD6 /* DVTTextCompletionDataSource+Lin.m in Sources */,
 				AAB604A51A83C3B900C0E59B /* LINLocalizationParser.m in Sources */,
