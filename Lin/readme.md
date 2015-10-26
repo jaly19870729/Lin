@@ -1,1 +1,1 @@
-ok
+add word in code to Localizable.strings
