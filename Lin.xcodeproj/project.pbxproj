@@ -28,6 +28,8 @@
 		AAB604A51A83C3B900C0E59B /* LINLocalizationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB604A41A83C3B900C0E59B /* LINLocalizationParser.m */; };
 		AAB604AB1A83CBD400C0E59B /* LINLocalizationParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB604A41A83C3B900C0E59B /* LINLocalizationParser.m */; };
 		EED212AD1BDDF09B0088D676 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = EED212AC1BDDF09B0088D676 /* readme.md */; };
+		EED212B21BDDF1AD0088D676 /* LinLocalizedInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED212B01BDDF1AD0088D676 /* LinLocalizedInputController.m */; };
+		EED212B31BDDF1AD0088D676 /* LinLocalizedInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EED212B11BDDF1AD0088D676 /* LinLocalizedInputController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,10 @@
 		AAB604AC1A83D3B900C0E59B /* DVTTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTTextStorage.h; sourceTree = "<group>"; };
 		AAC2027C1A868C730010FDF7 /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
 		EED212AC1BDDF09B0088D676 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		EED212AF1BDDF1AD0088D676 /* LinLocalizedInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinLocalizedInputController.h; sourceTree = "<group>"; };
+		EED212B01BDDF1AD0088D676 /* LinLocalizedInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinLocalizedInputController.m; sourceTree = "<group>"; };
+		EED212B11BDDF1AD0088D676 /* LinLocalizedInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinLocalizedInputController.xib; sourceTree = "<group>"; };
+		EED212B41BDDF21A0088D676 /* Lin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lin-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,7 @@
 		AA80F33D1A82804C007687A3 /* Lin */ = {
 			isa = PBXGroup;
 			children = (
+				EED212AE1BDDF1870088D676 /* Controller */,
 				AA1DB1151A828CC100856B10 /* Xcode */,
 				AA1DB1141A828CBA00856B10 /* Categories */,
 				AAB6049E1A839BC500C0E59B /* Models */,
@@ -204,6 +211,7 @@
 				AA80F33F1A82804C007687A3 /* Info.plist */,
 				AA49B19B1A829B02003EA1A3 /* Completions.plist */,
 				EED212AC1BDDF09B0088D676 /* readme.md */,
+				EED212B41BDDF21A0088D676 /* Lin-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +260,16 @@
 				AA49B1931A82959D003EA1A3 /* IDEWorkspace.h */,
 			);
 			name = IDEFoundation;
+			sourceTree = "<group>";
+		};
+		EED212AE1BDDF1870088D676 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EED212AF1BDDF1AD0088D676 /* LinLocalizedInputController.h */,
+				EED212B01BDDF1AD0088D676 /* LinLocalizedInputController.m */,
+				EED212B11BDDF1AD0088D676 /* LinLocalizedInputController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED212B31BDDF1AD0088D676 /* LinLocalizedInputController.xib in Resources */,
 				AA49B19C1A829B02003EA1A3 /* Completions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +385,7 @@
 				AAB604A51A83C3B900C0E59B /* LINLocalizationParser.m in Sources */,
 				AA4A0AA81A874D20005109B0 /* DVTSourceCodeLanguage+Lin.m in Sources */,
 				AA49B1961A8295F6003EA1A3 /* IDEWorkspace+Lin.m in Sources */,
+				EED212B21BDDF1AD0088D676 /* LinLocalizedInputController.m in Sources */,
 				AA1DB1221A828FBF00856B10 /* LINTextCompletionItem.m in Sources */,
 				AA1313AA1A8289360080D488 /* DVTSourceTextView+Lin.m in Sources */,
 				AA1DB1181A828CD500856B10 /* DVTTextCompletionController+Lin.m in Sources */,
@@ -494,6 +514,7 @@
 					"$(DEVELOPER_DIR)/../Frameworks",
 					"$(DEVELOPER_DIR)/../SharedFrameworks",
 				);
+				GCC_PREFIX_HEADER = "Lin/Lin-Prefix.pch";
 				INFOPLIST_FILE = Lin/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +534,7 @@
 					"$(DEVELOPER_DIR)/../Frameworks",
 					"$(DEVELOPER_DIR)/../SharedFrameworks",
 				);
+				GCC_PREFIX_HEADER = "Lin/Lin-Prefix.pch";
 				INFOPLIST_FILE = Lin/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_NAME = "$(TARGET_NAME)";
